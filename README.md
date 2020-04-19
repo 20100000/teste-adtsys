@@ -15,12 +15,12 @@ Docker é extremamente necessário porque APPID dp OpenWeatherMap
 git clone https://github.com/20100000/teste-adtsys.git<br/>
 cd teste-adtsys
 <h4>2° Instale as dependerias</h4>  
-Ma raiz do projeto
+na raiz do projeto
 crie node_module com as dependências.<br/>
 npm install
 
 <h4>3° Iniciar projeto</h4>
-strat back-end com docker-compose <br/>
+start back-end com docker-compose <br/>
 docker-compose up<br/>
 <strong>ou</strong><br/>
 sem docker-compose<br/>
