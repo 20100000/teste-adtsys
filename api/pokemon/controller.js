@@ -23,7 +23,7 @@ const _getPokemon = async (req, res, next) => {
             typePokemon = 'ground';
         } else if (body.main.temp >= 23 && body.main.temp < 27) {
             typePokemon = 'bug';
-        } else if (body.main.temp == 33) {
+        } else if (body.main.temp >= 27 && body.main.temp <= 33) {
             typePokemon = 'rock';
         } else if (body.main.temp > 33) {
             typePokemon = 'fire';
@@ -39,7 +39,6 @@ const _getPokemon = async (req, res, next) => {
         const responsePokemon = await fetch(url);
         const resPokemon = await responsePokemon.json();
         const pokemon = resPokemon.pokemon[Math.floor(Math.random() * resPokemon.pokemon.length)].pokemon;
-        //pokemon.sprites.front_default
 
         url = `https://pokeapi.co/api/v2/pokemon/${pokemon.name}`;
         const responsePokemonImg = await fetch(url);
