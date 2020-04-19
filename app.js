@@ -6,9 +6,6 @@ const logger = require('morgan');
 var cors = require('cors');
 var cons = require('consolidate');
 
-const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
-
 const pokemon = require('./api/pokemon/router');
 //Reservar
 const app = express();
@@ -24,9 +21,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 app.use(pokemon.path, pokemon.router);
 
