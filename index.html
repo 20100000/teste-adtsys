@@ -54,6 +54,10 @@
                     $("#temp").text('');
                 }
 
+            }).fail(function(textStatus, errorThrown) {
+                $("#rain").text('');
+                $("#conteudo").html('<tr><td>Erro não encotro api verifique se a mesma esta rodando na porta 3000.</td><td></td></tr>');
+                $("#temp").text('');
             });
         });
     });
