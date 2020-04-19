@@ -6,7 +6,7 @@ Back-end NodeJs com framework Express.<br/>
 Front-end Html, javascript, ajax e Jquery index.html na raiz do projeto
 
 <h3>Requisitos para rodar projeto</h3>
-Docker é extremamente necessário porque APPID dp OpenWeatherMap
+Docker é extremamente necessário porque APPID do OpenWeatherMap
  esta declarada como variável de ambiente no dockerfile <strong>ENV PASSWORD_WEATHER</strong>.<br/>
  Instale nodejs e npm para instalar dependencias e rodar os testes.
 
