@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
 </head>
 <body>
     <label>Cidade:</label>
@@ -42,7 +42,7 @@
                 if(res.success){
                     html += '<tr><td>'+res.pokemon.name+'</td><td><img src="'+res.img+'"/></td></tr>';
                     $("#conteudo").html(html);
-                    $("#temp").text('Temperatura : '+res.temp+'°');
+                    $("#temp").text('Temperatura : '+res.temp+'°C');
                     if(res.rain =='Rain' || res.rain == 'Thunderstorm'){
                         chuva = 'Sim'
                     }
