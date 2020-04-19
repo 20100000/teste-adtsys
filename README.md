@@ -3,7 +3,7 @@
 <h3>Tecnologias usadas no projeto</h3>
 Ambiente docker com framework docker-compose<br/>
 Back-end NodeJs com framework Express.<br/>
-Front-end Html, javascript, ajax e Jquery index.Html na raiz do projeto
+Front-end Html, javascript, ajax e Jquery index.html na raiz do projeto
 
 <h3>Requisitos para rodar projeto</h3>
 Docker é extremamente necessário porque APPID dp OpenWeatherMap
@@ -32,7 +32,9 @@ Rode o contener na porta 3000 por causa do front-end url do ajax ta apontando pa
 
 <h4>4° Execute o front-end</h4>
 url no meu caso file:///home/tiago/Documentos/teste-adtsys/index.html ou
-click em index.html na raiz do projeto, ou seja, execute a index.html no navegador ela e o front-end da aplicação.
+click em index.html na raiz do projeto, ou seja, execute a index.html no navegador ela e o front-end da aplicação.<br/>
+Digite o nome da cidade e click no botão enviar.
+
 
 <h4>5̣° Teste unitario da API</h4>
 docker-compose up -d<br/>
