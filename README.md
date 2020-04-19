@@ -1,7 +1,7 @@
 <h1>Teste API Rest Pokémon - ADTSys</h1>
-
+=========================================================================<br/>
 <h3>Tecnologias usadas no projeto</h3>
-Ambiente docker com framework docker-compose
+Ambiente docker com framework docker-compose<br/>
 Back-end NodeJs com framework Express.<br/>
 Front-end Html, javascript e Jquery index.Html na raiz do projeto
 <h3>Requisitos para rodar projeto</h3>
