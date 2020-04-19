@@ -22,7 +22,7 @@ npm install
 <h4>3° Iniciar projeto</h4>
 strat back-end com docker-compose <br/>
 docker-compose up<br/>
-<em>ou</em><br/>
+<strong>ou</strong><br/>
 sem docker-compose<br/>
 docker build -t node10 . <br/>
 docker run -p 3000:3000 -d node10<br/>
@@ -30,5 +30,11 @@ docker run -p 3000:3000 -d node10<br/>
 node10 e o nome da image, se preferir coloque o nome que quiser.<br/>
 Rode o contener na porta 3000 por causa do front-end url do ajax ta apontando para o mesmo.<br/>
 
+<h4>4° Execute o front-end</h4>
+url no meu caso file:///home/tiago/Documentos/teste-adtsys/index.html ou
+click em index.html na raiz do projeto, ou seja, execute a index.html no navegador ela e o front-end da aplicação.
 
-click em index.html na raiz do projeto, ou seja, execute a inde.html no navegador ela e o front-end 
+<h4>5̣° Teste unitario da API</h4>
+docker-compose up<br/>
+é<br>
+npm test
