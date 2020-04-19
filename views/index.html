@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" name="city" id="city"/>
+    <input type="button" id="btn" value="enviar">
+    <br>
+    <br>
+    <br>
+    <table style="width:100%">
+        <thead>
+        <tr>
+            <th>List</th>
+        </tr>
+        </thead >
+
+        <tbody id="conteudo">
+
+        </tbody>
+
+    </table>
+
+
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            var city = $("#city").val();
+
+            $.getJSON("http://localhost:3000/musica/"+city, function(res){
+                let html = '';
+                console.log('retorno',res.success);
+                $.each(res.data, function (key, item) {
+                    html += '<tr><td>'+item.album.name+'</td></tr>';
+                });
+                console.log('aqiiiiiiiiiiiiiiiii',html);
+                $("#conteudo").html(html);
+
+            });
+        });
+    });
+</script>
+</html>

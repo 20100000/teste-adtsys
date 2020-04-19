@@ -1,0 +1,10 @@
+{
+  "development":{
+    "host": 'localhost',
+    "database": 'procarbr_aluguel',
+    "user": 'root',
+    "password": '',
+    "dialect": 'mysql'
+
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <label>Cidade:</label>
+    <input type="text" name="city" id="city"/>
+    <input type="button" id="btn" value="enviar">
+    <br>
+    <br>
+    <h4 id="temp"></h4>
+    <h4 id="rain"></h4>
+    <br>
+    <table style="width:100%">
+        <thead>
+        <tr>
+            <th>POKÉMON</th>
+            <th></th>
+        </tr>
+        </thead >
+
+        <tbody id="conteudo">
+
+        </tbody>
+
+    </table>
+
+
+</body>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function(){
+            var city = $("#city").val().trim();
+
+            $.getJSON("http://localhost:3000/pokemon/"+city, function(res){
+                let html = '';
+                let chuva = 'Não';
+                console.log('retorno',res.success);
+                if(res.success){
+                    html += '<tr><td>'+res.pokemon.name+'</td><td><img src="'+res.img+'"/></td></tr>';
+                    $("#conteudo").html(html);
+                    $("#temp").text('Temperatura : '+res.temp+'°');
+                    if(res.rain =='Rain' || res.rain == 'Thunderstorm'){
+                        chuva = 'Sim'
+                    }
+                    $("#rain").text('Chuva : '+chuva);
+
+                }else{
+                    $("#rain").text('');
+                    $("#conteudo").html('<tr><td>Erro cidade não encontrada</td><td></td></tr>');
+                    $("#temp").text('');
+                }
+
+            });
+        });
+    });
+</script>
+</html>
