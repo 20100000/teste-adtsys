@@ -35,6 +35,6 @@ url no meu caso file:///home/tiago/Documentos/teste-adtsys/index.html ou
 click em index.html na raiz do projeto, ou seja, execute a index.html no navegador ela e o front-end da aplicação.
 
 <h4>5̣° Teste unitario da API</h4>
-docker-compose up<br/>
+docker-compose up -d<br/>
 é<br>
 npm test
