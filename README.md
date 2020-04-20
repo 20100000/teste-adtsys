@@ -32,7 +32,7 @@ node10 e o nome da image, se preferir coloque o nome que quiser.<br/>
 Rode o contener na porta 3000 por causa do front-end url do ajax ta apontando para o mesmo.<br/>
 
 <h4>4° Execute o front-end</h4>
-url no meu caso file:///home/tiago/Documentos/teste-adtsys/index.html ou
+url no meu caso file:///teste-adtsys/index.html ou
 click em index.html na raiz do projeto, ou seja, execute a index.html no navegador ela e o front-end da aplicação.<br/>
 Digite o nome da cidade e click no botão enviar.
 
