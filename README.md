@@ -3,6 +3,7 @@
 <h3>Tecnologias usadas no projeto</h3>
 Ambiente docker com framework docker-compose<br/>
 Back-end NodeJs com framework Express.<br/>
+teste jasmine<br/>
 Front-end Html, javascript, ajax e Jquery index.html na raiz do projeto
 
 <h3>Requisitos para rodar projeto</h3>
