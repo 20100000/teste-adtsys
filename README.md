@@ -40,6 +40,9 @@ Digite o nome da cidade e click no botão enviar.
 
 
 <h4>5̣° Teste unitario da API</h4>
+Rodando a aplicação
+```console
 docker-compose up -d<br/>
+```
 em seguida<br>
 npm test
