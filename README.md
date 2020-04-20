@@ -35,7 +35,7 @@ Rode o contener na porta 3000 por causa do front-end url do ajax ta apontando pa
 url no meu caso file:///teste-adtsys/index.html ou
 click em index.html na raiz do projeto, ou seja, execute a index.html no navegador ela e o front-end da aplicação.<br/>
 Digite o nome da cidade e click no botão enviar.
-<img src="img/res.png" />
+<img src="img/res.png" width="60"/>
 
 
 
