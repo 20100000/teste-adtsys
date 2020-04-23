@@ -1,5 +1,5 @@
-const express = require('express');
-const Controller = require('./controller');
+import express from 'express';
+import Controller from './controller';
 const PATH = '/pokemon';
 
 
