@@ -1,6 +1,6 @@
 import fetch from 'node-fetch';
 
-const getTipePk = (temp) =>{
+const getTypePk = (temp) =>{
     let type = null;
     if (temp< 5) {
         type = 'ice';
@@ -54,7 +54,7 @@ const _getPokemon = async (req, res, next) => {
         if (rain === 'Rain' || rain === 'Thunderstorm') {
             typePokemon = 'electric';
         } else {
-            typePokemon =  getTipePk(temp);
+            typePokemon =  getTypePk(temp);
         }
 
         const pokemon = await getPokemon(typePokemon);
@@ -63,7 +63,7 @@ const _getPokemon = async (req, res, next) => {
 
         return res.send(JSON.stringify({success: true, pokemon: pokemon, rain: rain, temp: temp, img: pokemonImg}));
     } catch (err) {
-         res.status(500);
+         res.status(400);
          return res.send(JSON.stringify({success: false, error: err}));
     }
 };
